@@ -1,6 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
+import PDFModifier from './PDFModifier';
+import './App.css';
 
+function App() {
+  const [activeTab, setActiveTab] = useState('pdf'); // 'pdf' or 'todo'
 
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>Multi-Purpose Application</h1>
+        <nav className="tab-navigation">
+          <button 
+            className={`tab-button ${activeTab === 'pdf' ? 'active' : ''}`}
+            onClick={() => setActiveTab('pdf')}
+          >
+            PDF Text Modifier
+          </button>
+          <button 
+            className={`tab-button ${activeTab === 'todo' ? 'active' : ''}`}
+            onClick={() => setActiveTab('todo')}
+          >
+            Todo App
+          </button>
+        </nav>
+      </header>
+
+      <main className="App-main">
+        {activeTab === 'pdf' ? (
+          <PDFModifier />
+        ) : (
+          <Todos />
+        )}
+      </main>
+    </div>
+  );
+}
+
+// Todo Component (existing functionality)
 class Todos extends React.Component {
     constructor(props) {
         super(props);
@@ -64,4 +100,4 @@ class TodoList extends React.Component {
     }
 }
 
-export default Todos;
+export default App;
