@@ -1,0 +1,285 @@
+.pdf-modifier {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.pdf-modifier h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.file-upload-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 2px dashed #dee2e6;
+}
+
+.upload-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.upload-btn:hover {
+  background: #0056b3;
+}
+
+.file-name {
+  color: #28a745;
+  font-weight: 500;
+}
+
+.actions-section {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.action-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.action-btn:hover:not(:disabled) {
+  background: #1e7e34;
+}
+
+.action-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.text-preview {
+  margin-bottom: 30px;
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.text-preview h3 {
+  background: #f8f9fa;
+  margin: 0;
+  padding: 15px 20px;
+  border-bottom: 1px solid #dee2e6;
+  color: #495057;
+}
+
+.page-text {
+  padding: 20px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.page-text:last-child {
+  border-bottom: none;
+}
+
+.page-text h4 {
+  color: #007bff;
+  margin: 0 0 10px 0;
+  font-size: 1.1rem;
+}
+
+.text-content {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #495057;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.modifications-section {
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.modifications-section h3 {
+  margin: 0 0 20px 0;
+  color: #495057;
+}
+
+.modification-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.mod-btn {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.mod-btn:hover {
+  background: #545b62;
+}
+
+.modification-item {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.mod-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  background: #e9ecef;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.mod-type {
+  font-weight: 500;
+  color: #495057;
+}
+
+.remove-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.remove-btn:hover {
+  background: #c82333;
+}
+
+.mod-fields {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.field-group label {
+  font-weight: 500;
+  color: #495057;
+  font-size: 14px;
+}
+
+.field-group input {
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.field-group input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.generate-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  margin-top: 20px;
+  transition: background-color 0.2s;
+}
+
+.generate-btn:hover:not(:disabled) {
+  background: #c82333;
+}
+
+.generate-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.output-message {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 6px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.output-message.success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.output-message.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .pdf-modifier {
+    padding: 15px;
+  }
+  
+  .file-upload-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .modification-buttons {
+    flex-direction: column;
+  }
+  
+  .mod-fields {
+    grid-template-columns: 1fr;
+  }
+}
